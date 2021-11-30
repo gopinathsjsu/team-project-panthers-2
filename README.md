@@ -22,7 +22,6 @@ MERN Stack
 ## Architechture Diagram:
 ![image](https://user-images.githubusercontent.com/91310893/143941880-83c60ba8-a766-4b8b-9183-ef185afb6e73.png)
 
-## Sprint Task Sheet:
 
 ## Scrum Meetings:
 Every Monday
