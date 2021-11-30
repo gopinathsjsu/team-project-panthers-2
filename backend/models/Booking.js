@@ -13,7 +13,7 @@ const BookingSchema = new Schema({
     companyName: {
         type: String,
         required: true
-    }
+    },
     seat: {
         type: String,
         required: true
