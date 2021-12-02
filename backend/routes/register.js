@@ -26,6 +26,7 @@ router.post('/', jsonParser, async (req, res) => {
         password: hashPassword,
         mobile: req.body.mobile,
         gender: req.body.gender,
+        employee: req.body.employee,
         dob: moment(req.body.dob).format('YYYY-MM-DD')
     }
     let newUser = new User(user)

@@ -26,6 +26,9 @@ const FlightSchema = new Schema({
     },
     pricePerSeat: {
         type: String
+    },
+    date: {
+        type: String
     }
 }, {collection: "flights"})
 

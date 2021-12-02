@@ -25,6 +25,14 @@ const UserSchema = new Schema({
     dob: {
         type: Date,
         required: true
+    },
+    employee: {
+        type: String,
+        required: false
+    },
+    rewards: {
+        type: Number,
+        default: 0
     }
 })
 
