@@ -17,7 +17,7 @@ export default function Profile({ history }) {
 
         if(count==0){
             console.log("email"+email)
-            axios.get(`http://localhost:8080/userDetails/${email}`)
+            axios.get(`http://18.189.6.116:8080/userDetails/${email}`)
             .then((response) => {
             //update the state with the response data
             console.log("data"+JSON.stringify(response.data))

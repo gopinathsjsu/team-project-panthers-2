@@ -11,7 +11,7 @@ export default function ViewBookings({ history }) {
 
     useEffect(() => {
         if(count==0){
-        axios.get('http://localhost:8080/flightDetails/')
+        axios.get('http://18.189.6.116:8080/flightDetails/')
         .then((response) => {
         //update the state with the response data
         console.log("data"+JSON.stringify(response.data))

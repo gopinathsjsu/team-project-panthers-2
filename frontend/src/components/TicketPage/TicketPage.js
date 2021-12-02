@@ -95,7 +95,7 @@ export default function TicketPage({ history }) {
 
         let email = localStorage.getItem("email")
 
-        axios.post(`http://localhost:8080/updateRewards/${email}`,{
+        axios.post(`http://18.189.6.116:8080/updateRewards/${email}`,{
             headers:{
                 'Content-Type': 'application/json'
             }

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export function bookingFlight(newBookingDetails){
-    let apiUrl = 'http://localhost:8080/bookingFlight'
+    let apiUrl = 'http://18.189.6.116:8080/bookingFlight'
     console.log('apiURL'+apiUrl)
     return axios.post(apiUrl,newBookingDetails,{
         headers:{
@@ -12,6 +12,6 @@ export function bookingFlight(newBookingDetails){
 
 export function viewBookings(){
    // const token =  authToken
-    let apiUrl = `http://localhost:8080/bookingFlight`
+    let apiUrl = `http://18.189.6.116:8080/bookingFlight`
     return axios.get(apiUrl)
 }

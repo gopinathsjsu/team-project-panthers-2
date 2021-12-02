@@ -12,7 +12,7 @@ export default function ViewBookings({ history }) {
     useEffect(() => {
         if(count==0){
             console.log("email"+email)
-        axios.get(`http://localhost:8080/bookingFlight/${email}`)
+        axios.get(`http://18.189.6.116:8080/bookingFlight/${email}`)
         .then((response) => {
         //update the state with the response data
         console.log("data"+JSON.stringify(response.data))
@@ -25,10 +25,10 @@ export default function ViewBookings({ history }) {
     const cancelBookingData = (e,bookingId) => {
         e.preventDefault()
 
-        let apiUrl = 'http://localhost:8080/bookingFlight'
+        let apiUrl = 'http://18.189.6.116:8080/bookingFlight'
     console.log(apiUrl)
     console.log(bookingId)
-    axios.post(`http://localhost:8080/bookingDelete/${bookingId}`,{
+    axios.post(`http://18.189.6.116:8080/bookingDelete/${bookingId}`,{
         headers:{
             'Content-Type': 'application/json'
         }
