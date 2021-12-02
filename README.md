@@ -28,8 +28,8 @@ Every Monday
 https://github.com/gopinathsjsu/team-project-panthers-2/projects/1
 
 ### Team Google Sprint Task Sheet:
-Sprint Task sheet and burndown charts included:
--------------------
+Sprint Task sheet and burndown charts included: \
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQquExa89LAn9VqiHsXn86_k9SQuz4Flzg5U9FaV78mCbGawmKTaIkpp9qCuZptBDi6udixjO7O5g09/pubhtml
 
 ### Tools and Technologies Used: *MERN Stack* 
 
