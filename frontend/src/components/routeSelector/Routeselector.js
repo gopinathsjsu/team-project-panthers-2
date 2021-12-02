@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import './Routeselector.css'
 import * as apiCall from './routeApifunc'
-import FlightList from '../FlightList/FlightList'
+import FlightList from '../FlightList/flightList'
 export default function Routeselector() {
     const [dataInp, setData] = useState("")
     const [startCity, setStartCity] = useState('')
     const [destination, setDestination] = useState('')
+    const [date, setDate] = useState('')
     const handleToCity = e => {
         e.preventDefault()
         setDestination({ destination: e.target.value })
@@ -26,17 +27,19 @@ export default function Routeselector() {
     const getRoutes = e => {
         e.preventDefault()
         // console.log(startCity,destination)
-        apiCall.getRoutesFromApi(startCity.startCity, destination.destination)
+        apiCall.getRoutesFromApi(startCity.startCity, destination.destination,date.date)
             .then(response => response.data)
             .then(data => {
+                console.log("Data"+JSON.stringify(data));
                 setData(data.flight)
             })
     }
 
     const handleDate = e => {
         e.preventDefault()
-        //    console.log(e.target.value)
+            console.log(e.target.value)
         localStorage.setItem("date", e.target.value)
+        setDate({ date: e.target.value })
     }
     
     return (
@@ -48,12 +51,16 @@ export default function Routeselector() {
                         <option>FROM</option>
                         <option>San Fransisco</option>
                         <option>Pheonix</option>
+                        <option>San Jose</option>
+                        <option>Boston</option>
                     </select>
                     <select name="ad_account_selected" data-style="btn-new" class="selectpicker" onChange={e => { handleToCity(e) }}>
                         <option>TO</option>
+                        <option>Seattle</option>
                         <option>New York</option>
-                        <option>Denver</option>
                         <option>New Jersey</option>
+                        <option>Denver</option>
+                        <option>Chicago</option>
                     </select>
                     <input onChange={e => { handleDate(e) }} type="date"></input>
                     <input type="submit" className=" btn btn-primary btn-md getRoute" />

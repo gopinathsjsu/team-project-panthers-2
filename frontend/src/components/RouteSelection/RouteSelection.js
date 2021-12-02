@@ -10,11 +10,17 @@ export default function RouteSelection({ history }) {
         history.push('/profile')
     }
 
+    const handleViewBookingClick = e => {
+        e.preventDefault()
+        history.push('/bookinglist')
+    }
+
     const handleSignOut = e => {
         e.preventDefault()
         sessionStorage.removeItem('authToken')
         localStorage.removeItem('reservedSeats')
         localStorage.removeItem('nameData')
+        localStorage.removeItem('email')
         localStorage.clear()
         history.push('/')
     }
@@ -28,10 +34,11 @@ export default function RouteSelection({ history }) {
         <div className="container">
             <div>
                 <nav className="mb-4 navbar navbar-expand-lg navbar-dark bg-unique hm-gradient">
-                    <a href="/#" className="navbar-brand Company-Log" onClick={(e) => handleLogoClick(e)}>UT</a>
+                    <a href="/#" className="navbar-brand Company-Log" onClick={(e) => handleLogoClick(e)}>Book Flight</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
+                    <a href="/#" className="navbar-brand Company-Log" onClick={(e) => handleViewBookingClick(e)}>View Bookings</a>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent-3">
                         <ul className="navbar-nav ml-auto nav-flex-icons ic">
                             <li className="nav-item">
