@@ -6,6 +6,8 @@ import RouteSelection from './components/RouteSelection/RouteSelection'
 import LogOrsign from './components/Login-Signup/LogOrsign'
 import Signup from './components/Login-Signup/Signup'
 import Profile from './components/Profile/Profile'
+import BookingList from './components/BookingList/BookingList'
+import FlightDetails from './components/BookingList/FlightDetails'
 import TicketPage from './components/TicketPage/TicketPage'
 import './App.css';
 
@@ -19,6 +21,8 @@ function App() {
           <Route path="/register" render={props => <Signup {...props} />} />
           <Route path="/routes" exact render={props => <RouteSelection {...props} />} />
           <Route path="/profile" exact render={props => <Profile {...props} />} />
+          <Route path="/bookinglist" exact render={props => <BookingList {...props} />} />
+          <Route path="/flightDetails" exact render={props => <FlightDetails {...props} />} />
           <Route path="/getTicket" exact render={props => <TicketPage {...props} />} />
         </Switch>
       </Router>
