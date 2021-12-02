@@ -18,14 +18,28 @@ export default function LogOrsign({ history }) {
 
     const submitData = e => {
         e.preventDefault()
-        // console.log(userData)
-        logFunc.logUserIn(userData)
+        console.log(userData)
+        if(userData.email=='empuser@gmail.com'){
+            console.log('employee login')
+            logFunc.logUserIn(userData)
             .then(response => response.data)
             .then(data => {
                 let { token } = data
                 sessionStorage.setItem('authToken', token)
+                history.push('/flightDetails')
+            })
+        }
+        else{
+        logFunc.logUserIn(userData)
+            .then(response => response.data)
+            .then(data => {
+                console.log("logdata"+JSON.stringify(data))
+                localStorage.setItem("email", (userData.email. toLowerCase()));
+                let { token } = data
+                sessionStorage.setItem('authToken', token)
                 history.push('/routes')
             })
+        }
     }
 
 
@@ -38,14 +52,14 @@ export default function LogOrsign({ history }) {
                         <div className="col-lg-8">
                             <div className="form-area login-form">
                                 <div className="form-content">
-                                    <h2>Login</h2>
-                                    <p>you chose the right option</p>
-                                    <ul>
+                                    <h2>Login with your Credentials</h2>
+                                    {/* <p>you chose the right option</p> */}
+                                    {/* <ul>
                                         <li><a href="/#" className="facebook"><FaFacebookF /></a></li>
                                     </ul>
                                     <ul>
                                         <li><a href="/#" className="twitter"><FaTwitterSquare /></a></li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                                 <div className="form-input">
                                     <h2>Enter Credentials</h2>

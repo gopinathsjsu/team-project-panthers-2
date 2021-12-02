@@ -42,7 +42,7 @@ p.lead {
 }
 
 .right-divider {
-    background: rgba(103, 58, 183, 0.7);
+    background: rgba(13, 8, 22, 0.7);
     padding-top: 30px;
 }
 
@@ -244,8 +244,8 @@ input.form-submit {
 }
 
 .sub-btn {
-    background: rgba(103, 58, 183);
-    border-color: rgba(103, 58, 183);
+    background: rgba(13, 8, 22, 0.7);
+    border-color: rgba(13, 8, 22, 0.7);
 }
 
 .sub-btn:hover {

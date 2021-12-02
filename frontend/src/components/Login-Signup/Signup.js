@@ -55,15 +55,22 @@ export default function Signup({ history }) {
                             <div className="form-container-in"></div>
                             <div className="row sgnUp ">
                                 <div className="col-md-6 right-divider pdding">
-                                    <h3 className="lead-text mn-txt">
-                                        Join Us with Social
+                                <h3 className="lead-text mn-txt">
+                                        <br></br> 
                                     </h3>
-                                    <div className="icon-soc-fb">
+                                    <h3 className="lead-text mn-txt">
+                                        Enter details 
+                                        <br></br> 
+                                        <br></br> 
+                                        <br></br> 
+                                        to signup
+                                    </h3>
+                                    {/* <div className="icon-soc-fb">
                                         <FaFacebookF />
                                     </div>
                                     <div className="icon-soc-tw">
                                         <FaTwitterSquare />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="left-divider">
                                     <div className="col-md-6">
@@ -91,6 +98,17 @@ export default function Signup({ history }) {
                                             <div class="form-check form-check-inline rd">
                                                 <input required class="form-check-input" type="radio" id="Female" name="gender" value="Female" onChange={e => handleChangeEvent(e, 'gender')} />
                                                 <label class="form-check-label" htmlFor="Female">Female</label>
+                                            </div>
+                                            <div class="form-group2">
+                                                <label>Are you an Employee?</label>
+                                            </div>
+                                            <div class="form-check form-check-inline rd">
+                                                <input required class="form-check-input" type="radio" id="Yes" name="employee" value="Yes" onChange={e => handleChangeEvent(e, 'employee')} />
+                                                <label class="form-check-label" htmlFor="Yes">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline rd">
+                                                <input required class="form-check-input" type="radio" id="No" name="employee" value="No" onChange={e => handleChangeEvent(e, 'employee')} />
+                                                <label class="form-check-label" htmlFor="No">No</label>
                                             </div>
                                             <div class="form-group2">
                                                 <label htmlFor="password">Password :</label>
