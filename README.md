@@ -44,7 +44,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vQquExa89LAn9VqiHsXn86_k9SQuz4Fl
 - Booking
 
 ### Wireframes:
-----------------
+https://github.com/gopinathsjsu/team-project-panthers-2/tree/main/WireFrames
 
 ## Architechture Diagram:
 ![image](https://user-images.githubusercontent.com/91310893/143941880-83c60ba8-a766-4b8b-9183-ef185afb6e73.png)
