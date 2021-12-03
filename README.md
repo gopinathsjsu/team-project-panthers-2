@@ -22,7 +22,7 @@
 Every Monday
 
 ### Team Project Journal:
--------------
+https://github.com/gopinathsjsu/team-project-panthers-2/blob/main/ProjetJournal.md
 
 ### Team Project board:
 https://github.com/gopinathsjsu/team-project-panthers-2/projects/1
